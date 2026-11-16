@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tourist Guider</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial, sans-serif;
+
+    /* Ocean Scenic Background */
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+    position:relative;
+}
+
+/* Dark overlay */
+body::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.35);
+    z-index:0;
+}
+
+/* Home Button (Top Right) */
+.home-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:white;
+    color:#0e7c86;
+    padding:10px 20px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    transition:0.3s;
+    z-index:2;
+}
+
+.home-btn:hover{
+    background:#0e7c86;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Form Container */
+.form-container{
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    text-align:center;
+    position:relative;
+    z-index:1;
+}
+
+h2{
+    font-family:"Arial Black", Arial, sans-serif;
+    color:#0e7c86;
+    margin-bottom:25px;
+}
+
+select{
+    width:100%;
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+</style>
+
+<script>
+function goToPage(value){
+    if(value !== ""){
+        window.location.href = value;
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Home Button -->
+<a href="main1.html" class="home-btn">Home</a>
+
+<div class="form-container">
+    <h2>WELCOME</h2>
+    <h2>TO TOURIST GUIDER</h2>
+
+    <select onchange="goToPage(this.value)">
+        <option value="">Choose your destiny</option>
+        <option value="india1.html">India</option>
+        <option value="china4.html">China</option>
+        <option value="japan4.html">Japan</option>
+    </select>
+</div>
+
+</body>
+</html>

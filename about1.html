@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Smart Tourist Guide</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ff7e00, #ffb347);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Home Button (Top Right) */
+.home-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: #ff7e00;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #ff7e00;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Heading */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Image */
+.image-box img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Points */
+.points {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.points li {
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Home Button -->
+<a href="main1.html" class="home-btn">Home</a>
+
+<div class="container">
+
+    <h1>Smart Tourist Guide System</h1>
+
+    <!-- Tourist Image -->
+    <div class="image-box">
+        <img src="logo1.jpg" alt="Tourism">
+    </div>
+
+    <!-- Description Points -->
+    <ul class="points">
+        <li><b>1.</b> Provides intelligent travel recommendations based on user preferences, location, and interests.</li>
+        <li><b>2.</b> Helps tourists discover popular destinations, hidden gems, and cultural landmarks.</li>
+        <li><b>3.</b> Offers real-time navigation, maps, and route suggestions for a smooth travel experience.</li>
+        <li><b>4.</b> Displays detailed information about places including history, timings, ratings, and reviews.</li>
+        <li><b>5.</b> Enhances travel planning with personalized suggestions, weather updates, and nearby facilities.</li>
+    </ul>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    COPYRIGHTS RECEIVED BY @24761A05F1
+</footer>
+
+<script>
+// Simple animation on load
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".container").style.opacity = "0";
+    setTimeout(() => {
+        document.querySelector(".container").style.transition = "1s";
+        document.querySelector(".container").style.opacity = "1";
+    }, 200);
+});
+</script>
+
+</body>
+</html>
